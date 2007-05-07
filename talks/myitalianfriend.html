@@ -1,0 +1,204 @@
+<!-- vim: set tw=78: -->
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>spinal4ever</title>
+        <link rel="stylesheet" type="text/css" href="/site.css" media="screen" />
+    </head>
+    <body>
+        <pre>
+        [09:55]	--&gt;|	otay (n=chatzill@81-208-74-187.ip.fastwebnet.it) has joined #oracle
+        [09:56]	&lt;otay&gt;	hello my friends my db host is called: dbserver , my table space iserv , my user id and pass: gabry . How can i connect me on thise DB from my notebook using sql plus?
+        [10:05]	--&gt;|	misty (n=misty@216.117.23.202) has joined #oracle
+        [10:21]	&lt;xzilla&gt;	Robinsjostrom: try select * from "hello|table";
+        [10:22]	&lt;xzilla&gt;	Robinsjostrom: though i would strongly suggest you rename your table
+        [10:25]	&lt;shan&gt;	hi, i
+        [10:25]	--&gt;|	Mr_You (n=car@cpe-071-076-161-238.triad.res.rr.com) has joined #oracle
+        [10:28]	&lt;rizzo&gt;	otay: you still need to know the SID or service name of that instance
+        [10:28]	&lt;rizzo&gt;	tablespace isn't relevant at all
+        [10:28]	&lt;rizzo&gt;	otay: google around for OracleNet basics
+        [10:28]	&lt;otay&gt;	sid is iserv
+        [10:29]	&lt;rizzo&gt;	then you could connect with EasyConnect (I think that's the name)
+        [10:29]	&lt;rizzo&gt;	or add an entry in your tnsnames.ora file either manually or via one of the two java utilities
+        [10:29]	&lt;otay&gt;	easyconnect? i have downloaded oracle sql plus express client
+        [10:29]	&lt;otay&gt;	i will use this.
+        [10:30]	&lt;rizzo&gt;	then go nuts
+        [10:30]	&lt;rizzo&gt;	I've no experience with express clients
+        [10:31]	&lt;otay&gt;	rizzo: i have experience with a big penis and your mother under my desk. if you need RTFM dont google, just ask me .. i am your mother skilled developer.
+        [10:31]	&lt;rizzo&gt;	http://blogs.ittoolbox.com/oracle/guide/archives/forget-about-tns-connect-to-oracle-using-easy-connect-7295?rss=1
+        [10:31]	&lt;rizzo&gt;	wtf
+        [10:31]	&lt;Xgc&gt;	I don't know if the installation process is any better. A few years ago it lacked any setup for the network related config files (like tnsnames.ora or the libs). Be careful here.
+        [10:31]	--&gt;|	sekhmet (n=pez@ppp-70-226-146-235.dsl.mdsnwi.ameritech.net) has joined #oracle
+        [10:32]	--&gt;|	avaia (n=avaia@yosemite.cellcom.com) has joined #oracle
+        [10:32]	&lt;rizzo&gt;	otay: wtf was that about
+        [10:32]	&lt;otay&gt;	rtfm.
+        [10:33]	&lt;rizzo&gt;	you're telling *ME* to rtfm? you're the one who was asking how to connect to the DB.
+        [10:33]	&lt;Xgc&gt;	Once you set up the instant client properly, it'll be fine. But the config might not be done for you and may not be specified in the docs.
+        [10:33]	&lt;otay&gt;	rizzo: i cant now explain you all the oracle stuff.. please google .. and learn how to logon i guess is : connect user/pass@host
+        [10:34]	&lt;Xgc&gt;	[10:56] &lt;otay&gt; hello my friends my db host is called: dbserver , my table space iserv , my user id and pass: gabry . How can i connect me on thise DB from my notebook using sql plus?
+        [10:34]	&lt;otay&gt;	lol
+        [10:34]	&lt;Xgc&gt;	otay: You're confused. It was you who asked the question.
+        [10:34]	&lt;rizzo&gt;	I'm confused too.
+        [10:35]	&lt;rizzo&gt;	ready to bust out the /ignore
+        [10:35]	&lt;otay&gt;	bust bust..
+        [10:35]	&lt;avaia&gt;	who will thief me?
+        [10:35]	&lt;rizzo&gt;	no I need to log this to show my friends later
+        [10:35]	&lt;rizzo&gt;	otayyyyyyyyyyyyyyyyyy
+        [10:36]	&lt;otay&gt;	rizzo: italiano del cazzo.
+        [10:36]	&lt;Xgc&gt;	otay: This isn't a very large channel. Yuo don't really want people who normally/willingly help other to ignore you.
+        [10:36]	&lt;Xgc&gt;	s/other/others
+        [10:36]	--&gt;|	misty_ (n=misty@216.117.23.202) has joined #oracle
+        [10:37]	&lt;otay&gt;	Xgc: i dont want.. but if rizzo insult me in query
+        [10:37]	&lt;rizzo&gt;	how's that?
+        [10:37]	&lt;otay&gt;	&lt;rizzo&gt; otayyyyyy i burn your ass. and kill your family
+        [10:38]	&lt;Xgc&gt;	otay: Don't bring that into the channel. That's unnecessary. Feel free to ignore anyone you wish.
+        [10:38]	&lt;otay&gt;	oki
+        [10:38]	&lt;avaia&gt;	...
+        [10:38]	&lt;otay&gt;	i put now a ignore on rizzo.. and stop
+        [10:38]	&lt;otay&gt;	thanks a lot
+        [10:38]	&lt;rizzo&gt;	lol
+        [10:39]	&lt;rizzo&gt;	someone please show me where I insulted him
+        [10:39]	&lt;rizzo&gt;	my irc client must be hiding it from me
+        [10:39]	&lt;Xgc&gt;	rizzo: He thinks you privately /msg'd him in an insulting way.
+        [10:39]	&lt;rizzo&gt;	I did not
+        [10:40]	&lt;rizzo&gt;	rest assured
+        [10:40]	&lt;Xgc&gt;	and of course that could be entirely fabricated.
+        [10:40]	&lt;Mr_You&gt;	its IRC, get over it ;-)
+        [10:40]	&lt;avaia&gt;	don't make me pull this channel over!
+        [10:40]	&lt;Mr_You&gt;	haha
+        [10:40]	&lt;otay&gt;	.. i have fabricated nothing
+        [10:40]	&lt;otay&gt;	rizzo is still insult me in query now.
+        [10:40]	&lt;otay&gt;	but i have ignored him.
+        [10:41]	&lt;otay&gt;	so i can read no more him
+        [10:41]	&lt;avaia&gt;	then how do you know?
+        [10:41]	&lt;otay&gt;	some second ago.. i bust the ignore..
+        [10:41]	&lt;otay&gt;	now nothing
+        [10:41]	&lt;rizzo&gt;	I'm still wondering how it is that I insulted/still insult him
+        [10:41]	&lt;otay&gt;	but it is ok.. its irc.. and there are such lamers like rizzo.
+        [10:41]	&lt;avaia&gt;	otay: I did that years ago, good idea.
+        [10:41]	&lt;rizzo&gt;	ha
+        [10:42]	&lt;Xgc&gt;	Hopefully my real Italian cousins will forgive the *.it /ignore.
+        [10:42]	&lt;otay&gt;	razzist.
+        [10:42]	===	otay &lt;n=chatzill@81-208-74-187.ip.fastwebnet.it&gt; “New Now Know How”
+        [10:42]	===	otay: member of #oracle
+        [10:42]	===	otay: attached to irc.freenode.net “http://freenode.net/”
+        [10:42]	===	otay is identified to services
+        [10:42]	---	End of WHOIS information for otay.
+        [10:42]	|&lt;--	grove has left brown.freenode.net (Read error: 110 (Connection timed out))
+        [10:43]	--&gt;|	grove (n=grove@062016244240.customer.alfanett.no) has joined #oracle
+        [10:43]	&lt;Mr_You&gt;	versus fake Italian cousins?
+        [10:44]	&lt;Mr_You&gt;	;-)
+        [10:44]	&lt;rizzo&gt;	I'm still wondering if otay said that HE's going to burn my ass and kill my family, or if he meant to suggest that I told HIM that.
+        [10:44]	* Mr_You	is in an obnoxious mood.. time for food.
+        [10:44]	&lt;rizzo&gt;	now otay is /msg'ing me
+        [10:44]	&lt;Mr_You&gt;	I bet no one in here cares. ;-)
+        [10:44]	&lt;rizzo&gt;	[10:44] &lt;otay&gt; ..you are very bad .
+        [10:44]	&lt;rizzo&gt;	Mr_You: DRAMA
+        [10:45]	&lt;Mr_You&gt;	which is rare in here.. hehe
+        [10:45]	&lt;Mr_You&gt;	#oracle is becoming mainstream? ;-)
+        [10:45]	&lt;avaia&gt;	Mr_You: I was invited here and I brought my popcorn, I demand satisfaction.
+        [10:45]	&lt;Xgc&gt;	It's usually so nice and calm here.
+        [10:45]	&lt;Mr_You&gt;	hehe
+        [10:46]	&lt;avaia&gt;	except for when hali stays too long at the pub
+        [10:47]	&lt;Mr_You&gt;	hehe
+        [10:48]	&lt;otay&gt;	and when rizzo will flame
+        [10:49]	|&lt;--	misty has left brown.freenode.net (Read error: 110 (Connection timed out))
+        [10:50]	&lt;rizzo&gt;	doing a poor job of /ignoring me
+        [10:52]	* rizzo	is doing the Log Buffer the week ending April 6th
+        [10:52]	&lt;rizzo&gt;	beware
+        [10:55]	&lt;otay&gt;	rizzo: i have removed the ignore on you after 10 minuts.. but you are always talking about me.. please stop
+        [10:56]	&lt;rizzo&gt;	you are delusional
+        [10:56]	&lt;otay&gt;	i forgot you to have insult my mother, father, brother and grandmother
+        [10:56]	&lt;otay&gt;	now return to your script kiddie stuff
+        [10:56]	&lt;otay&gt;	and forgot also me.
+        [10:56]	&lt;rizzo&gt;	I have yet to insult *anyone*
+        [10:57]	&lt;otay&gt;	all my family.. but is not important
+        [10:57]	&lt;rizzo&gt;	You have a fascinating way of asking for help. Perhaps try it elsewhere so others may experience it.
+        [10:57]	--&gt;|	duck_tape (n=adi@64.74.221.28) has joined #oracle
+        [10:57]	&lt;rizzo&gt;	otay: exactly how did I insult your family?
+        [10:57]	&lt;otay&gt;	you will i paste you query?
+        [10:58]	&lt;rizzo&gt;	please do.
+        [10:59]	&lt;otay&gt;	&lt;rizzo&gt; excuse me public in channel or i nuke you with my bomber net. NOW.
+        [10:59]	&lt;otay&gt;	&lt;otay&gt; no i will not.
+        [10:59]	&lt;otay&gt;	&lt;rizzo&gt; wtf mother fucker!
+        [11:00]	&lt;otay&gt;	and so on
+        [11:00]	&lt;rizzo&gt;	I'm sorry, are you serious?
+        [11:00]	&lt;otay&gt;	ok you are sorry
+        [11:00]	&lt;otay&gt;	yes i am seriuous when you insult my mother
+        [11:00]	&lt;hali&gt;	otay: i don't think you should stay in this channel
+        [11:00]	&lt;hali&gt;	otay: you are welcome to leave now
+        [11:00]	--&gt;|	MilkmanDan (i=dannyd@cpe-65-185-90-40.neo.res.rr.com) has joined #oracle
+        [11:01]	&lt;otay&gt;	hali: .. its not my fault.. it is rizzo..
+        [11:01]	--&gt;|	superdug_ (n=superdug@24-196-94-222.dhcp.mdsn.wi.charter.com) has joined #oracle
+        [11:01]	&lt;Mr_You&gt;	use ignore, get over it.
+        [11:01]	&lt;otay&gt;	but if you dont want me here.. i go out. .. but the one that must go out is only rizzo.
+        [11:02]	&lt;superdug_&gt;	otay: you should use easy connect
+        [11:02]	&lt;Mr_You&gt;	he's not bothering the channel.
+        [11:02]	&lt;MilkmanDan&gt;	11:47:22 &lt;rizzo&gt; MilkmanDan did I ever tell you how much you mean to me?
+        [11:02]	&lt;MilkmanDan&gt;	flamer
+        [11:02]	--&gt;|	sargeantd (n=mike@adsl-68-249-7-33.dsl.milwwi.sbcglobal.net) has joined #oracle
+        [11:02]	&lt;superdug_&gt;	otay: when was the last time you did a smegcheck?
+        [11:02]	&lt;otay&gt;	never
+        [11:03]	&lt;superdug_&gt;	what do you mean never?
+        [11:03]	&lt;superdug_&gt;	are you serious?
+        [11:03]	&lt;superdug_&gt;	otay: seriously when was the last time you did a smegcheck?
+        [11:03]	&lt;otay&gt;	superdug today all the persone ask me : are you serious.. but i am not here for joke .. like rizzo
+        [11:04]	&lt;otay&gt;	never
+        [11:04]	&lt;superdug_&gt;	dude you need to do a smegcheck
+        [11:04]	&lt;--|	avaia has left #oracle ("Leaving")
+        [11:04]	&lt;otay&gt;	oki thanks for advice
+        [11:04]	&lt;superdug_&gt;	do you know what a smegcheck even is?
+        [11:04]	&lt;otay&gt;	no, google dont help me
+        [11:05]	&lt;superdug_&gt;	are you next to your oracle server or at least where you can physically have access to it?
+        [11:05]	&lt;otay&gt;	i am in remote
+        [11:05]	&lt;otay&gt;	he is in another room
+        [11:05]	&lt;superdug_&gt;	ohhh geeze
+        [11:05]	&lt;superdug_&gt;	okay ... but you can get into that other room?
+        [11:05]	&lt;otay&gt;	no
+        [11:05]	&lt;superdug_&gt;	ohhh man
+        [11:06]	&lt;otay&gt;	:(
+        [11:06]	&lt;superdug_&gt;	remote smegchecks aren't easy
+        [11:06]	&lt;otay&gt;	in what consist ?
+        [11:06]	&lt;superdug_&gt;	can you at least reboot the box remotely?
+        [11:06]	&lt;otay&gt;	no
+        [11:06]	&lt;otay&gt;	or maibe
+        [11:06]	&lt;otay&gt;	yes
+        [11:06]	&lt;otay&gt;	with vnc
+        [11:06]	&lt;superdug_&gt;	yes you can reboot it?
+        [11:06]	&lt;otay&gt;	yes
+        [11:06]	--&gt;|	snoopy_atw (n=eugenek@86.57.155.189) has joined #oracle
+        [11:07]	&lt;superdug_&gt;	okay good ... a smegcheck is basically a way to clear up all the virtual "dust" in oracel
+        [11:08]	&gt;hali&lt;	you dont have ops in #oracle?
+        [11:08]	&lt;otay&gt;	ah understand
+        [11:08]	&lt;otay&gt;	but superdug_ why i need a smeg check?
+        [11:08]	&lt;superdug_&gt;	otay: first off you need to close all the applications on the remote box ...
+        [11:08]	&lt;superdug_&gt;	you want to use easy connect right?
+        [11:08]	&lt;otay&gt;	superdug_: no :(
+        [11:08]	&lt;superdug_&gt;	you don't want to use easy connect?
+        [11:08]	&lt;otay&gt;	i never want to use easy connect.. was rizzo thise
+        [11:09]	&lt;superdug_&gt;	ohhh what did you want to use?
+        [11:09]	&lt;otay&gt;	i will only know if with oracle express is possible use utl_snmtp ?
+        [11:09]	&lt;hali&gt;	otay: yes oracle XE can use utl_smtp
+        [11:09]	&lt;MilkmanDan&gt;	This is going to turn out badly...
+        [11:09]	&lt;otay&gt;	and how can i logon with oracle express client sql plys on my oracle normal
+        [11:09]	* MilkmanDan	hopes someone logs it.
+        [11:09]	&lt;otay&gt;	hali: thanks
+        [11:09]	&lt;superdug_&gt;	ohh you just want to use sql plus?
+        [11:09]	&lt;otay&gt;	yes
+        [11:09]	&lt;otay&gt;	just this
+        [11:09]	&lt;superdug_&gt;	perfect!
+        [11:10]	&lt;otay&gt;	=) thanks
+        [11:10]	&lt;superdug_&gt;	okay you just need to do a smegcheck on your machine
+        [11:10]	&lt;superdug_&gt;	not the remote machine
+        [11:10]	&lt;otay&gt;	ah
+        [11:10]	&lt;otay&gt;	ok
+        [11:10]	&lt;otay&gt;	but i have googled and smegcheck return me nothing...
+        [11:10]	&lt;superdug_&gt;	you will need to reboot first ... reboot and come back in here
+        [11:10]	&lt;otay&gt;	ok
+        [11:11]	|&lt;--	otay has left brown.freenode.net ("Chatzilla 0.9.77 [Firefox 2.0.0.2/2007021917]")
+        [11:12]	&lt;rizzo&gt;	if only we could /ban
+        </pre>
+    </body>
+</html>
